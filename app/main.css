@@ -1,0 +1,18 @@
+html{color:#888;}
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}
+.material-icons.md-18 { font-size: 18px; }
+.md-dialog md-dialog-content{overflow:hidden;}
+
+.mse-p{cursor:pointer;}
+
+/*Overwrite*/
+.mgtf {height:auto;}
+.mgtf figcaption{-webkit-flex:1;ms-flex:1;flex:1;box-sizing:border-box;}
+
+.recard{width:200px;height:100px;color:white;}
+
+md-autocomplete {width: 580px;}

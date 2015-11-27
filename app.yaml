@@ -1,0 +1,25 @@
+application: recoom
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+- url: /
+  static_files: app/welcome.html
+  upload: app/welcome.html
+- url: /listing
+  static_files: app/listing.html
+  upload: app/listing.html
+- url: /app
+  static_dir: app
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
